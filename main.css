@@ -41,42 +41,32 @@ html {
   position: relative;
   align-self: center;
   justify-self: center;
-
-  width: 2vw;
-  height: 2vw;
+  width: 1vh;
+  height: 1vh;
   background-color: var(--clock-outer-bg-color);
   z-index: 2;
   display: flex;
   justify-items: center;
   align-items: center;
-  border-radius: 50%;
+
 }
 
 .clockArms .shortArm,
 .clockArms .longArm {
   position: absolute;
-
-  left: calc(50% - 4px);
-  bottom: calc(50% - 4px);
-  width: 6px;
+  left: calc(50% - 2px);
+  bottom: calc(50% - 2px);
+  width: 4px;
   height: 10vw;
   background-color: var(--clock-outer-bg-color);
   transform-origin: 0 100%;
   transition: 0.5s cubic-bezier(0.4, 2.08, 0.55, 0.44);
 }
+
 .clockArms .longArm {
   height: 20vw;
   background-color: var(--clock-outer-bg-color);
 }
-
-/* @keyframes timePasses {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
-} */
 
 .digits {
   position: absolute;
